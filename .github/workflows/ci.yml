@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install backend dependencies
+        working-directory: ./backend
+        run: npm install
+      - name: Check backend syntax
+        working-directory: ./backend
+        run: node -c server.js
+
+  frontend-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install frontend dependencies
+        working-directory: ./deployapp
+        run: npm install
+      - name: Build frontend
+        working-directory: ./deployapp
+        run: npm run build
