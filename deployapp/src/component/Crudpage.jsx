@@ -97,7 +97,7 @@ function CrudData() {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Customer-Names11</th>
+            <th>Customer-Names</th>
             <th>Emailid</th>
             <th>Created-Time</th>
             <th>Edit</th>
