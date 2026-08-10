@@ -99,7 +99,7 @@ function CrudData() {
             <th>ID</th>
             <th>Customer-Names</th>
             <th>Emailid</th>
-            <th>Created-Time</th>
+            <th>Created-Timevalue</th>
             <th>Edit data</th>
             <th>Deletee</th>
           </tr>
