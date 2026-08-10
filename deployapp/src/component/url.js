@@ -9,4 +9,4 @@
 // export const Apiurl = "https://real-live-docker-2-n3lg.onrender.com"
 // using node with ci and cd ( no docker)
 
-export const Apiurl = "https://depolyappci-cd.onrender.com
+export const Apiurl = "https://depolyappci-cd.onrender.com"
