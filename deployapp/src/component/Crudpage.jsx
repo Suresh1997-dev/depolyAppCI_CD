@@ -108,7 +108,7 @@ function CrudData() {
         <tbody>
           {users.map((row) => (
             <tr key={row.id}>
-              <td>{row.id}</td>
+              {/* <td>{row.id}</td> */}
               <td>{row.name}</td>
               <td>{row.email}</td>
               <td>{row.created_at}</td>
