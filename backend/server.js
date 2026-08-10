@@ -11,7 +11,8 @@ const app = express();
 // }));
 
 app.use(cors({
-  origin: 'https://real-live-docker-1.onrender.com'
+  // origin: 'https://real-live-docker-1.onrender.com'
+  origin: 'https://depolyappci-cd-1-front-end.onrender.com'
 }));
 // app.use(express.json());
 // app.use(express.json({ limit: '10mb' }));
